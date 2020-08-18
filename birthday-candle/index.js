@@ -1,6 +1,16 @@
-function birthdayCakeCandles(ar,arCount) {
+// count number of candles which are highest in an array 
+
+//Parameters : Array of intergers,(arOfIntegers,arCount);
+//Return : count number of highest(integer) in array , count(int)
+
+// Test cases:
+// 
+    // print(birthdayCakeCandles([1,2,4,4]) === 2); 
+    // print(birthdayCakeCandles([5,1,2,3,4,6,6,6]) === 3); 
+
+function birthdayCakeCandles(arOfIntegers,arCount) {
     let count = 1;
-    let sortedArray = ar.sort((a,b)=>a-b).reverse();
+    let sortedArray = arOfIntegers.sort((a,b)=>a-b).reverse();
     
     for ( let i = 0; i < arCount -1; i++ ) {
         if ( sortedArray[i] === sortedArray[i+1] ) {
@@ -12,7 +22,7 @@ function birthdayCakeCandles(ar,arCount) {
 
 birthdayCakeCandles([1,1,1,1,1,1,1,])
 
-// Find the maximum value in the array
-// Traverse through the array
-    // count if the element is equal to the max value
-// return count
+// learning :
+//   sort method
+//   reverse method
+
